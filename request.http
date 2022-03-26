@@ -1,0 +1,42 @@
+POST http://localhost:5000/api/v1/superheroes/superhero HTTP/1.1
+Content-Type: application/json
+
+{
+  "superhero_name": "Batman",
+  "realname": "Bruce Wayne",
+  "superpower": ["Dinero"],
+  "universe": "D.C",
+  "enemies" : [
+    {
+      "enemy_name" : "Joker",
+      "enemy_universe" : "D.C"
+    }
+  ]
+}
+
+###
+GET http://localhost:5000/api/v1/superheroes HTTP/1.1
+
+
+###
+GET http://localhost:5000/api/v1/superheroes/623e9513c6e2eee5ae9114aa HTTP/1.1
+
+
+###
+PUT http://localhost:5000/api/v1/superheroes/623e93d9c6e2eee5ae9114a8 HTTP/1.1
+Content-Type: application/json
+
+{
+  "universe": "Marvel",
+  "superpower": ["Fuerza","Velocidad"],
+  "enemies" :[
+    {
+      "enemy_name" : "Black Manta",
+      "enemy_universe" : "D.C"
+    }
+  ]
+}
+
+###
+DELETE  http://localhost:5000/api/v1/superheroes/623e93d9c6e2eee5ae9114a8 HTTP/1.1
+
