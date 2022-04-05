@@ -28,7 +28,7 @@ const superheroSchema = mongoose.Schema({
       type : String,
       require : true
     }
-  }]
+  }],
 });
 
 const superheroCollection = mongoose.model('superheroCollection', superheroSchema)
